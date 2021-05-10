@@ -105,13 +105,10 @@
 
 ### Thunderbolt 4はThunderbolt 3、USB4以前の規格と互換性をもつ
 
->>>
+---
 
-**Thunderbolt 4ケーブルは以前の規格と互換性があり、USB4、Thunderbolt 3ケーブルとしても使える**ので、非常に汎用性が高い。
-
->>>
-
-今後USB Type-C端子のケーブル選びで迷ったら、とりあえずThunderbolt 4って書いているケーブルを買っておけば間違いない
+<p><b>Thunderbolt 4ケーブルは以前の規格と互換性があり、USB4、Thunderbolt 3ケーブルとしても使える</b>ので、非常に汎用性が高い。</p>
+<p class="fragment">→ 今後USB Type-C端子のケーブル選びで迷ったら、とりあえずThunderbolt 4って書いているケーブルを買っておけば間違いない</p>
 
 ---
 
