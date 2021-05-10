@@ -16,7 +16,7 @@ $ npm install -g reveal-md
 ## Preview
 
 ```bash
-$ reveal-md contents/ -w
+$ reveal-md content/ -w
 ```
 
 ## Generate Static Pages
