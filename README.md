@@ -4,7 +4,7 @@ Powered by [reveal-js](https://github.com/webpro/reveal-md)
 
 ## Generated Pages
 
-- https://zrn-ns.github.io/Slides/
+<a href="https://zrn-ns.github.io/Slides/" target="_blank">https://zrn-ns.github.io/Slides/</a>
 
 ## Setup
 
