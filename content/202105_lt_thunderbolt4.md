@@ -1,10 +1,3 @@
-<!-- https://github.com/webpro/reveal-md
-
-below command to start preview
-$ reveal-md hoge.md
-
--->
-
 <h1>とりあえず<br>⚡️Thunderbolt 4<br>ケーブルを<br>買っとけばヨシ！！</h1>
 
 📝Yuki Nagao
