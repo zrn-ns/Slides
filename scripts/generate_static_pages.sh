@@ -19,6 +19,6 @@ fi
 
 reveal-md content/ --static docs --static-dirs=content/attachments
 git add .
-git commit -m "ADD Generated static pages: `date`"
+git commit -m "ADD Generated static pages: `date '+%Y/%m/%d %H:%M:%S'`"
 
 cd scripts
