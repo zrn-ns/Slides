@@ -19,4 +19,6 @@ fi
 
 reveal-md content/ --static docs --static-dirs=content/attachments
 
-cd scripts
+git add .
+git commit -m "ADD generated docs"
+
