@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+# 超高速🚀で<br>プレゼン資料を<br>こしらえる
+
+📝Yuki Nagao
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+皆さんはプレゼン資料作るのって得意ですか？
+
+</script></section><section data-markdown><script type="text/template">
+
+資料作成って結構時間がかかりますよね
+
+</script></section><section data-markdown><script type="text/template">
+
+僕もめちゃくちゃ時間がかかりがちです
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## どのくらい時間を掛ける？
+
+</script></section><section  data-markdown><script type="text/template">
+
+30分？ 1時間？ なんだかんだ1週間くらいかかる？
+
+<p class="fragment">10分で話す内容なのに長時間かけるのは勿体なすぎる！</p>
+
+</script></section><section  data-markdown><script type="text/template">
+
+## スライドづくりで時間がかかる理由
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+### アイディア出しに時間がかかる！
+
+- 何のツールを使ってアイディアをまとめるか
+
+</script></section><section data-markdown><script type="text/template">
+
+### スライド作成に時間がかかる！
+
+- アイディアを練ったテキストをスライドに起こすのに時間がかかる
+- スライド作成ツールはいっぱいあるけど、どれを使えばいい？
+- スライドの色とかアニメーションとかどうしよう...
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## 爆速でスライドを作成するには？
+
+</script></section><section  data-markdown><script type="text/template">
+
+### →なるべく作るまでに考えることを減らすこと！
+
+スライド作成をルーチン化して、とりあえず最低限のものをサクッと作れるようにする！
+細かい調整とかは後でいい。
+
+</script></section><section  data-markdown><script type="text/template">
+
+## 爆速でスライドをこしらえる方法💪
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+### Atom（エディタ）で下書き
+
+markdownで下書きを書く。
+ある程度文書構造を考えて書くと後で楽。
+
+</script></section><section data-markdown><script type="text/template">
+
+### スライド作成：Reveal-md
+
+https://github.com/webpro/reveal-md
+
+- Reveal.jsというjavascript製のスライド生成ライブラリをラップしたもの。
+- Markdownをスライドとして表示してくれる。
+- npmでサクッとインストール可能↓
+
+```
+$ brew install node
+$ npm install -g reveal-md
+```
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+### 実際にスライドを作った際にかかった時間
+
+</script></section><section data-markdown><script type="text/template">
+
+1. Markdownで下書きを書く 30分
+
+![下書き](/attachments/202107_lt_revealmd/1.png)
+
+</script></section><section data-markdown><script type="text/template">
+
+2. プレビューを表示し、スライド表示用に調整 30分
+
+![プレビュー](/attachments/202107_lt_revealmd/2.png)
+
+</script></section><section data-markdown><script type="text/template">
+
+3. gitリポジトリにpushして公開！ 3分
+
+</script></section><section data-markdown><script type="text/template">
+
+→トータル60分！(大体)
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+### さらにこだわる人は？
+
+</script></section><section data-markdown><script type="text/template">
+
+テーマやアニメーションを一括で変えたり、いろんな事が割と手軽にできる！
+
+より詳しく知りたい人は、自分でググるか聞いてね！
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## おしまい🍵
+
+ご静聴いただきありがとうございました！
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
