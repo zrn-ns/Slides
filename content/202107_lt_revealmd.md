@@ -88,19 +88,19 @@ $ npm install -g reveal-md
 
 1. Markdownで下書きを書く 30分
 
-![下書き](/attachments/202107_lt_revealmd/1.png)
+![下書き](attachments/202107_lt_revealmd/1.png)
 
 >>>
 
 2. プレビューを表示し、スライド表示用に調整 30分
 
-![プレビュー](/attachments/202107_lt_revealmd/2.png)
+![プレビュー](attachments/202107_lt_revealmd/2.png)
 
 >>>
 
 3. スライドを自動生成。gitリポジトリにpushして公開！ 5分
 
-![push](/attachments/202107_lt_revealmd/3.png)
+![push](attachments/202107_lt_revealmd/3.png)
 
 >>>
 
