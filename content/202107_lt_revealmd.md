@@ -98,7 +98,9 @@ $ npm install -g reveal-md
 
 >>>
 
-3. gitリポジトリにpushして公開！ 3分
+3. スライドを自動生成。gitリポジトリにpushして公開！ 5分
+
+![push](/attachments/202107_lt_revealmd/3.png)
 
 >>>
 
