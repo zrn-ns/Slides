@@ -4,23 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal-md</title>
+    <title>爆速🚀でスライドをこしらえる</title>
     <link rel="shortcut icon" href="./favicon.ico"/>
     <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./dist/theme/league.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/zenburn.css" />
 
   </head>
   <body>
     <div class="reveal">
       <div class="slides"><section  data-markdown><script type="text/template">
-# 超高速🚀で<br>プレゼン資料を<br>こしらえる
+
+# 爆速🚀で<br>スライドを<br>こしらえる
 
 📝Yuki Nagao
 
 </script></section><section ><section data-markdown><script type="text/template">
 
-皆さんはプレゼン資料作るのって得意ですか？
+突然ですが、
+
+皆さんはプレゼン資料作るのは得意ですか？
 
 </script></section><section data-markdown><script type="text/template">
 
@@ -28,7 +31,7 @@
 
 </script></section><section data-markdown><script type="text/template">
 
-僕もめちゃくちゃ時間がかかりがちです
+僕もかなり時間がかかる方です
 
 </script></section></section><section  data-markdown><script type="text/template">
 
@@ -36,27 +39,27 @@
 
 </script></section><section  data-markdown><script type="text/template">
 
-30分？ 1時間？ なんだかんだ1週間くらいかかる？
+30分？ 1時間？ 1日かかる？
 
-<p class="fragment">10分で話す内容なのに長時間かけるのは勿体なすぎる！</p>
+<p class="fragment">10分のLT程度なら<br>サクッと作ってサクッと話したいですよね！</p>
 
 </script></section><section  data-markdown><script type="text/template">
 
-## スライドづくりで時間がかかる理由
+## 時間がかかる理由
 
 </script></section><section ><section data-markdown><script type="text/template">
 
 ### アイディア出しに時間がかかる！
 
-- 何のツールを使ってアイディアをまとめるか
+- どのツールを使ってアイディアをまとめるか？🧐
 
 </script></section><section data-markdown><script type="text/template">
 
 ### スライド作成に時間がかかる！
 
-- アイディアを練ったテキストをスライドに起こすのに時間がかかる
-- スライド作成ツールはいっぱいあるけど、どれを使えばいい？
-- スライドの色とかアニメーションとかどうしよう...
+- テキストをスライドに起こすのに時間がかかる😩
+- そもそもどのツールを使う？
+- スライドのテーマとかアニメーションとかどうしよう...
 
 </script></section></section><section  data-markdown><script type="text/template">
 
@@ -64,74 +67,126 @@
 
 </script></section><section  data-markdown><script type="text/template">
 
-### →なるべく作るまでに考えることを減らすこと！
+### →なるべく考えることを減らすこと！
 
-スライド作成をルーチン化して、とりあえず最低限のものをサクッと作れるようにする！
-細かい調整とかは後でいい。
+- 作成作業をルーチン化してしまおう！
+- 細かい調整は後で時間があればでよい
 
 </script></section><section  data-markdown><script type="text/template">
 
-## 爆速でスライドをこしらえる方法💪
+## 爆速で<br>スライドをこしらえる方法💪
 
 </script></section><section ><section data-markdown><script type="text/template">
 
-### Atom（エディタ）で下書き
-
-markdownで下書きを書く。
-ある程度文書構造を考えて書くと後で楽。
+1. 発表の概要をmarkdownで書く
+2. 下書きからスライドを生成して整形
 
 </script></section><section data-markdown><script type="text/template">
 
-### スライド作成：Reveal-md
+### 1. 発表の概要をmarkdownで書く
 
-https://github.com/webpro/reveal-md
+- Atom（エディタ）で下書きを書く
+- 文書構造を考えて書くとよい
 
-- Reveal.jsというjavascript製のスライド生成ライブラリをラップしたもの。
-- Markdownをスライドとして表示してくれる。
-- npmでサクッとインストール可能↓
+</script></section><section data-markdown><script type="text/template">
 
-```
-$ brew install node
-$ npm install -g reveal-md
-```
+### 2. 下書きからスライドを生成して整形
+
+[Reveal-md](https://github.com/webpro/reveal-md)というライブラリを使うと、markdownからスライドを生成できる
+
+- このスライドはReveal-mdで生成した
+- 生成したスライドはhtmlで出力されるので、GitHub Pages等でホスト可能
+- 自動でそれなりにリッチな見た目になるし、細かくカスタマイズも可能
 
 </script></section></section><section ><section data-markdown><script type="text/template">
 
-### 実際にスライドを作った際にかかった時間
+### 実際にスライドを作ってみる📝
 
 </script></section><section data-markdown><script type="text/template">
 
-1. Markdownで下書きを書く 30分
+#### 1. Markdownで下書き: 30分
 
 ![下書き](./attachments/202107_lt_revealmd/1.png)
 
 </script></section><section data-markdown><script type="text/template">
 
-2. プレビューを表示し、スライド表示用に調整 30分
+#### 2. プレビューを見つつ調整: 30分
 
 ![プレビュー](./attachments/202107_lt_revealmd/2.png)
 
 </script></section><section data-markdown><script type="text/template">
 
-3. スライドを自動生成。gitリポジトリにpushして公開！ 5分
+#### 3. コマンドでスライドを生成<br>gitリポジトリにpushして公開！: 5分
 
 ![push](./attachments/202107_lt_revealmd/3.png)
 
 </script></section><section data-markdown><script type="text/template">
 
-→トータル60分！(大体)
+**トータル60分🚀(大体)**
 
 </script></section></section><section ><section data-markdown><script type="text/template">
 
-### さらにこだわる人は？
+## さらにこだわる人は？
 
 </script></section><section data-markdown><script type="text/template">
 
-テーマやアニメーションを一括で変えたり、いろんな事が割と手軽にできる！
+### テーマやアニメーションを一括で変えたり、いろんな事が割と手軽にできる！
 
-より詳しく知りたい人は、自分でググるか聞いてね！
+</script></section><section data-markdown><script type="text/template">
+
+例えば...
+
+</script></section><section data-markdown><script type="text/template">
+
+画像をスタック表示したり
+
+<div class="r-stack">
+  <img src="https://placekitten.com/450/300" width="450" height="300">
+  <img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
+  <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+</div>
+
+</script></section><section data-markdown><script type="text/template">
+
+動画を貼り付けたり
+
+<video data-autoplay src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+
+</script></section><section data-markdown><script type="text/template">
+
+コードの表示もリッチに
+
+<pre><code data-line-numbers="7-7|10-13|14-14">
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        var times: RepeatTimes = .zero
+        do {
+            times = try .init(3)
+        } catch {
+            // エラー処理等
+            print(error)
+        }
+        label.text = "Hello".repeated(times: times)
+    }
+
+    @IBOutlet private weak var label: UILabel!
+}
+</code></pre>
 
 </script></section></section><section  data-markdown><script type="text/template">
+
+↓今回のスライド↓
+
+ http://localhost:1948/202107_lt_revealmd.md
+
+↓今回のスライドのソースコード↓
+
+https://github.com/zrn-ns/Slides/blob/master/content/202107_lt_revealmd.md
+
+</script></section><section  data-markdown><script type="text/template">
 
 ## おしまい🍵
 
@@ -179,7 +234,7 @@ $ npm install -g reveal-md
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {}, queryOptions);
+      var options = extend(defaultOptions, {"transition":"slide","progress":false}, queryOptions);
     </script>
 
 
