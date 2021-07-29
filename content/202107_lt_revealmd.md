@@ -1,12 +1,12 @@
 ---
-title: 爆速🚀でスライドをこしらえる
+title: 爆速🚀LT資料作成術
 theme: league
 revealOptions:
     transition: 'slide'
     progress: false
 ---
 
-# 爆速🚀で<br>スライドを<br>こしらえる
+# 爆速🚀<br>スライド<br>作成術<br>
 
 📝Yuki Nagao
 
