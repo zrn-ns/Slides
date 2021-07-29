@@ -29,13 +29,11 @@ const Plugin = {
 	init: function( reveal ) {
 
 		// Read the plugin config options and provide fallbacks
-		let config = reveal.getConfig().highlight || {};
+		var config = reveal.getConfig().highlight || {};
 		config.highlightOnLoad = typeof config.highlightOnLoad === 'boolean' ? config.highlightOnLoad : true;
 		config.escapeHTML = typeof config.escapeHTML === 'boolean' ? config.escapeHTML : true;
 
-		Array.from( reveal.getRevealElement().querySelectorAll( 'pre code' ) ).forEach( block => {
-
-			block.parentNode.className = 'code-wrapper';
+		[].slice.call( reveal.getRevealElement().querySelectorAll( 'pre code' ) ).forEach( function( block ) {
 
 			// Code can optionally be wrapped in script template to avoid
 			// HTML being parsed by the browser (i.e. when you need to
@@ -58,7 +56,7 @@ const Plugin = {
 
 			// Re-highlight when focus is lost (for contenteditable code)
 			block.addEventListener( 'focusout', function( event ) {
-				hljs.highlightElement( event.currentTarget );
+				hljs.highlightBlock( event.currentTarget );
 			}, false );
 
 			if( config.highlightOnLoad ) {
@@ -87,7 +85,7 @@ const Plugin = {
 	 */
 	highlightBlock: function( block ) {
 
-		hljs.highlightElement( block );
+		hljs.highlightBlock( block );
 
 		// Don't generate line numbers for empty code blocks
 		if( block.innerHTML.trim().length === 0 ) return;
