@@ -1,0 +1,53 @@
+name: Generate and Deploy Slides
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'content/**/*.md'
+      - 'content/attachments/**'
+      - 'reveal-md.json'
+      - 'custom.css'
+
+# GitHub Pagesへのデプロイ権限を付与
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時実行を防ぐ
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install reveal-md
+        run: npm install -g reveal-md
+
+      - name: Generate static HTML
+        run: reveal-md content/ --static docs --static-dirs=content/attachments
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
