@@ -1,6 +1,6 @@
 {
   "separator": "^---",
-  "verticalSeparator": "^>>>",
+  "verticalSeparator": "^--",
   "css": "custom.css",
   "theme": "black",
   "revealOptions": {

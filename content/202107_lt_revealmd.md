@@ -1,6 +1,7 @@
 ---
 title: 爆速🚀LT資料作成術
 theme: league
+verticalSeparator: ">>>"
 revealOptions:
     progress: false
 ---
