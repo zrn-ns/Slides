@@ -2,7 +2,6 @@
 title: 爆速🚀LT資料作成術
 theme: league
 revealOptions:
-    transition: 'slide'
     progress: false
 ---
 
